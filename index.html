@@ -1,0 +1,45 @@
+<!DOCTYPE HTML>
+<html>
+
+<meta charset = "utf-8">
+<title>
+Experimentral web platform of Roman Pastushkov
+</title>
+<style type="text/css">
+audio { 
+   display:none;
+}
+ body {
+    background-image: url(2images/New_York_City_at_night_HDR_edit1.jpg); 
+    background-color: #c7b39b; 
+   }
+
+#child{
+        vertical-align:bottom;
+
+        display:inline-table;
+}
+</style>
+<script>
+function log(text) {
+  var li = document.createElement('li');
+  li.appendChild(document.createTextNode(text));
+  document.getElementById('log').appendChild(li);
+  return false;
+}
+</script>
+<body>
+<H6> This is web pages powered by OpenResty (Nginx+ LuaJit (Lua programming language) )  and Open Source Operation System GNU Linux Debian 8
+<br>
+<div id="child"> <img src="images/openresty.png"height="100"><img src="images/Debian.png"height="100"></div>
+<audio controls  autoplay="true">
+ <source src="2music/Rene LaVice - Absolute Monster.mp3" type="audio/mpeg">
+Your browser does not support the audio element.
+</audio>
+<input type="text" >
+<input type="button" value="оставьте свой комментарий" onclick="log('some bullshit ')>
+ <ol id="log"></ol>
+</body>
+</html>
+
+
